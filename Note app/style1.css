@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.Wholebox{
+	height: 99.5vh;
+	width: 100%;
+}
+.header{
+	height: 10vh;
+	width: 100%;
+}
+.editer{
+	height: 89.5vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.tools{
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.tool{
+	height: 17vh;
+	width: 17vh;
+	margin: 2%;
+}
+.writerarea{
+	height: 100%;
+    width: 70%;
+}
+.area{
+	height: 60%;
+	width: 100%;
+	font-size: 3vh;
+	padding: 2%;
+}
+.but{
+	height: 10vh;
+	width: 20vh;
+	margin-left: 45%;
+}

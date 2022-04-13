@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid black;
+	text-align: center;
+}
+#head {
+    height: 11vh;
+    font-size: 5vh;
+    padding-top: 1%;
+    background-color: #ff000070;
+    color: white;
+}
+.text_area {
+    height: 55vh;
+}
+#txt_area {
+    height: 40vh;
+    width: 60%;
+    background-color: ghostwhite;
+    margin-top: 2%;
+    text-align: left !important;
+    padding: 1%;
+}
+.show{
+	height: 30vh;
+}
+.tb {
+    /* margin-left: 45%; */
+    margin: auto;
+}
+.x {
+    height: 7vh;
+    width: 21vh;
+    
+}

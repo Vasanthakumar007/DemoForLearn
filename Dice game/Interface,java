@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+ interface Communication {
+    public String message(String str);
+    Scanner sc = new Scanner(System.in);
+
+}
+class Whatshapp implements Communication{
+    public void details(){
+        System.out.println("Enter the phone number: ");
+        System.out.println("Your Phone number: "+ sc.nextInt());
+    }
+    @Override
+    public String message(String str) {
+        return str;
+    }
+}
+class Cliq implements Communication{
+    public void details(){
+        System.out.println("Enter the receiver number: ");
+        System.out.println("Your receiver number: "+ sc.nextInt());
+    }
+    @Override
+    public String message(String str) {
+        return str;
+    }
+}
+class Mail implements Communication{
+    public  void details(){
+        System.out.println("Enter the From address: ");
+        String from = sc.next();
+        System.out.println("Enter the To address: ");
+        String To = sc.next();
+        System.out.println("Enter the Subject: ");
+        String Sub = sc.next();
+        System.out.println("From address is: "+ from);
+        System.out.println("To address is: "+ To);
+        System.out.println("the subject is: "+ Sub);
+    }
+    
+    
+    @Override
+    public String message(String str) {
+        return str;
+    }
+}
+class Interface{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Choice(Whatshapp,Cliq,Mail): ");
+        int choice = sc.nextInt();
+        System.out.println("Enter the Message: ");
+        String str = sc.next();
+        switch (choice){
+            case 1:
+                Whatshapp wp = new Whatshapp();
+                wp.details();
+                System.out.println(wp.message(str));
+                break;
+            case 2:
+                Cliq cq = new Cliq();
+                cq.details();
+                System.out.println(cq.message(str));
+                break;
+            case 3:
+                Mail ml = new Mail();
+                ml.details();
+                System.out.println(ml.message(str));
+                break;
+        }
+
+    }
+}
+
+

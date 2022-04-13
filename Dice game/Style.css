@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.inside{
+	height: 79vh;
+	width: 88vh;
+	margin: 10% 15%;
+	display: flex;
+	flex-wrap:wrap ;
+	flex-direction: row;
+	position: relative;
+	background-color:white;
+
+}
+#player1{
+	height:50%;
+	width: 50%;
+
+}
+#player1_img{
+	background-image: url(person1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+#player2{
+	height: 50%;
+	width:  50%;
+}
+#player2_img{
+	background-image: url(person2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+#dice1{
+	height: 50%;
+	width: 50%;
+	perspective: 1000px;
+}
+.sub_die1{
+	border: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 2s;
+	/*animation: dieroll;*/
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	
+
+}
+@keyframes dieroll{
+	50%{
+       transform: rotate3d(1, 1, 1, 360deg);
+	}
+	100%{
+		transform: rotate3d(1, 1, 0, -360deg);
+	}
+	
+}
+.x{
+    height: 100px;
+    width: 100px;
+    font-size: 7vh;
+    padding: 3%;
+    position: absolute;
+    margin-top: 31%;
+    color: white;
+    text-align: center;
+    margin-left: 42%;
+ 
+}
+.front{
+background-color:blue;
+transform: rotateY(0deg) translatez(50px) 
+
+}
+.back{
+background-color: green;
+transform: rotateY(180deg) translatez(50px) 
+}
+.left{
+background-color: aquamarine;
+transform: rotateY(-90deg) translatez(50px)
+}
+.right{
+background-color:  yellow;
+transform: rotateY(90deg) translatez(50px);
+}
+.top{
+background-color:  red;
+transform: rotatex(90deg) translatez(50px)
+}
+.bottom{
+background-color:  orange;
+transform: rotatex(-90deg) translatez(50px)
+}
+
+#dice2{
+	height: 50%;
+	width:  50%;
+}
+#player1_img{
+	height: 50%;
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 10%;
+
+}
+#roll1{
+	background-color: green;
+    height: 10%;
+    width: 20%;
+    margin: auto;
+    margin-left: 42%;
+    margin-top: 8%;
+    border-radius: 1rem;
+    color: white;
+    font-size: x-large;
+
+}
+#player2_img{
+	height: 50%;
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 10%;
+}
+#roll2{
+	background-color: green;
+    height: 10%;
+    width: 20%;
+    margin: auto;
+    margin-left: 42%;
+    margin-top: 8%;
+    border-radius: 1rem;
+    color: white;
+    font-size: x-large;
+
+}
+.pointstable{
+	height: 59vh;
+    width: 47vh;
+    top: 26%;
+    left: 64%;	
+}
+#table{
+	background-color: white;
+}
+th{
+	height: 10vh;
+}
+td{
+	height: 9.5vh;
+    font-size: 5vh;
+    text-align: center;
+}
+button{
+	height: 10vh;
+	width: 20vh;
+	top: 90%;
+	left: 70%;
+	background-color: green;
+	color: white;
+	font-size: 5vh;
+}	
+#player1won{
+	background-color: white;
+    position: absolute;
+    display: flex;
+    top: 5%;
+    height: 13vh;
+    z-index: 1;
+    width: 99%;
+}
+#player2won{
+	background-color: white;
+    position: absolute;
+    display: flex;
+    top: 5%;
+    height: 13vh;
+    z-index: 1;
+    width: 99%;
+}

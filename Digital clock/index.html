@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer=""></script>
+	<script src="https://kit.fontawesome.com/1e52918f27.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="Wholebox">
+	<div class="header">
+	   <h1 style="border: none;">Digital clock</h1>
+    </div>
+    <div class="type">
+    	<div class="but" id="timer"style="margin-left:1%" onclick="timer()">Timer</div>
+    	<div class="but" id="clock"onclick="clock()">Clock</div>
+    	<div class="but" id="ST"onclick="stopwatch()">Stop Watch</div>
+    </div>
+	<div class="clock">
+		<div class="hrs">
+			<div class="y" id="hr1"></div>
+			<div class="y" id="hr2"style="margin-left: 10%;"></div>
+			<div class="y" id="hr3"></div>
+			<div class="y" id="hr4"style="margin-left: 10%;"></div>
+		</div>
+		<div class="gap">
+			<div class="dot"></div>
+			<div class="dot"></div>
+		</div>
+		<div class="mins">
+			<div class="y" id="min1"></div>
+			<div class="y" id="min2"style="margin-left: 10%;"></div>
+			<div class="y" id="min3"></div>
+			<div class="y" id="min4"style="margin-left: 10%;"></div>
+		</div>
+		<div class="gap">
+			<div class="dot"></div>
+			<div class="dot"></div>
+		</div>
+		<div class="sec">
+			<div class="y" id="sec1"></div>
+			<div class="y" id="sec2"style="margin-left: 10%;"></div>
+			<div class="y" id="sec3"></div>
+			<div class="y" id="sec4"style="margin-left: 10%;"></div>
+		</div>
+	</div>
+	<button onclick="s()" class="button" id="startbutton">start timer</button>
+	<button onclick="st()" class="button" id="stopbutton">stop timer</button>
+<audio id="play">
+	<source src="notification.mp3" type="audio/mpeg">
+	<source src="notification.ogg" type="audio/ogg">	
+</audio>
+
+</div>
+</body>
+</html>
